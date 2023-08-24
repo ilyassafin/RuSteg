@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 from os import listdir
 from getpass import getpass
@@ -80,7 +81,7 @@ if __name__ == '__main__':
     elif len(Argv) == 5:
         if Argv[3] == '-f':
             if Argv[1] == '-h':
-                with open(Argv[4], 'r') as InputFile:
+                with open(Argv[4], 'r', encoding='utf-8') as InputFile:
                     Hide(Argv[2], InputFile.read())
             elif Argv[1] == '-r':
                 with open(Argv[4], 'w') as OutputFile:
